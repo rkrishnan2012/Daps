@@ -31,10 +31,14 @@ Getting Started
 --------------
 Make sure you're on a Unix based computer (eg. Linux, Mac)
 
-### Installing Meteor ###
-curl https://install.meteor.com/ | sh
+#### Installing Meteor ####
 
-### Running Daps ###
+```sh
+curl https://install.meteor.com/ | sh
+```
+
+#### Running Daps ####
+
 ```sh
 cd ~
 git clone https://github.com/rkrishnan2012/Daps.git daps
