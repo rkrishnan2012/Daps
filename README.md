@@ -29,12 +29,19 @@ Prerequisites
 
 Getting Started
 --------------
+Make sure you're on a Unix based computer (eg. Linux, Mac)
+
+## Installing Meteor ##
+curl https://install.meteor.com/ | sh
+
+## Running Daps ##
 ```sh
 cd ~
 git clone https://github.com/rkrishnan2012/Daps.git daps
-cd runaway/backend
-npm install
+meteor --port 5000
 ```
+
+Now, go to localhost:5000 on your favorite browser and check it out!
 
 
 
