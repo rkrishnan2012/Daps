@@ -200,7 +200,7 @@ function sendSMSMessage(user, body) {
     twilio = Twilio(accountSid, authToken);
     twilio.sendSms({
         to: user.phoneNumber,
-        from: "+13392300519",
+        from: "+3392013041",
         body: body
     }, function(err, responseData) { //this function is executed when a response is received from Twilio
         if (!err) { // "err" is an error received during the request, if any
@@ -209,6 +209,9 @@ function sendSMSMessage(user, body) {
             // http://www.twilio.com/docs/api/rest/sending-sms#example-1
             console.log(responseData.from); // outputs "+14506667788"
             console.log(responseData.body); // outputs "word to your mother."
+        }
+        else{
+            console.log(err);
         }
     });
 }
