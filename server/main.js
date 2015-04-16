@@ -1,4 +1,4 @@
-var BASE_URL = "http://192.168.42.2:3000"
+var BASE_URL = "http://54.191.239.210:80"
 Meteor.methods({
     api_newDap: function(description, quality) {
         var fut = new Future();
@@ -195,8 +195,8 @@ function getShortUrl(longUrl, next) {
 
 function sendSMSMessage(user, body) {
     // Twilio Credentials
-    var accountSid = 'AC2030dd3c11b18dbc87137f961d2f98fa';
-    var authToken = '77a699bbfbd4c4952505a7eca5dec4c9';
+    var accountSid = 'ACfa7c9fe55f6b4246425a2713c7af7f3c';
+    var authToken = '8f0049a5dbbbbc7da026e096fc224bd2';
     twilio = Twilio(accountSid, authToken);
     twilio.sendSms({
         to: user.phoneNumber,
